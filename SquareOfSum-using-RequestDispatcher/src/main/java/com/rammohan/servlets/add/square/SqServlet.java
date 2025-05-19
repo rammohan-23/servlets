@@ -8,9 +8,9 @@ import javax.servlet.http.HttpServletResponse;
 
 public class SqServlet extends HttpServlet {
 	public void service(HttpServletRequest req, HttpServletResponse response) throws IOException {
-		int k = (int) req.getAttribute("k");
+		int n = (int) req.getAttribute("k");
 
-		response.getWriter().println("Result is " + k * k);
+		response.getWriter().println("Result is " + n * n);
 
 	}
 }
